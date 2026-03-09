@@ -2,22 +2,14 @@ import React from "react";
 import ProgressBar from "./ProgressBar";
 
 function ResultCard({ result }) {
-
 if(!result || result.length === 0) return null;
-
 const topCandidate = result[0];
-
 return (
-
 <div>
-
 {/* TOP CANDIDATE PANEL */}
 <div className="topCandidate">
-
 <h2>🏆 Top Candidate</h2>
-
 <h3>{topCandidate.name}</h3>
-
 <button
 className="openPdfBtn"
 onClick={()=>window.open(topCandidate.pdf_url,"_blank")}
