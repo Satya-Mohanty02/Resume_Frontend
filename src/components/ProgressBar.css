@@ -1,0 +1,15 @@
+.progressContainer{
+width:100%;
+background:#ddd;
+border-radius:10px;
+overflow:hidden;
+margin-top:15px;
+}
+
+.progressFill{
+background:#4CAF50;
+color:white;
+padding:5px;
+text-align:center;
+font-weight:bold;
+}

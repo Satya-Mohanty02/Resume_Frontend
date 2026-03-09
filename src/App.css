@@ -1,0 +1,233 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Purple + Blue Gradient Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Wave Effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: -150px;
+    left: -100px;
+    width: 140%;
+    height: 400px;
+
+    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.15), transparent 60%),
+        radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.1), transparent 60%),
+        radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.1), transparent 60%);
+
+    transform: rotate(-8deg);
+    pointer-events: none;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #141e30, #243b55);
+    color: white;
+    padding: 22px;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Main container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* Title */
+h1 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Card */
+.card {
+    background: #eeeed8;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    margin-top: 30px;
+}
+
+/* Upload section */
+.uploadBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+textarea{
+width:320px;
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+resize:none;
+}
+
+input[type="file"] {
+    padding: 8px;
+}
+
+/* Button */
+button {
+    background: linear-gradient(90deg, #667eea, #5a6df0);
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Progress Bar */
+.progressContainer {
+    width: 100%;
+    background: #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.progressFill {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Skill Badge */
+.skill {
+    background: #4CAF50;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Missing skill badge */
+.skill.missing {
+    background: #ff4b5c;
+}
+
+/* Score text */
+.score {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+
+    .uploadBox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
+
+.resultCard {
+    background: #fdfdfb;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.topCandidate {
+    background: linear-gradient(90deg, #fff7cc, #ffe066);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 3px solid gold;
+}
+
+.topCandidate h2 {
+    color: #b8860b;
+}
+
+.openPdfBtn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.openPdfBtn:hover {
+    background: #e68900;
+}
+
+.fileUpload {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.uploadBtn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.uploadBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fileCount {
+    font-size: 14px;
+    color: #555;
+}
