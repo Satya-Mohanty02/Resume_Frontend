@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://resumebackend-production-7bfd.up.railway.app/"
+  baseURL: "https://resume-backend-iota-green.vercel.app"
 });
 
 export const uploadResume = (formData) => {
